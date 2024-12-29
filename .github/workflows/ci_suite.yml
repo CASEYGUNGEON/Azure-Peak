@@ -86,9 +86,10 @@ jobs:
             echo "Compilation succeeded without critical errors."
           fi
   run-tests:
+    name: Integration Tests
+    runs-on: ubuntu-latest
     steps:
-      - name: Run unit tests
-        id: unit-tests
+      - name: Run tests
         run: |
           bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
