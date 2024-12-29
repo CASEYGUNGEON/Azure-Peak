@@ -89,4 +89,5 @@ jobs:
       - name: Run unit tests
         id: unit-tests
         run: |
+          source $HOME/BYOND/byond/bin/byondsetup
           bash tools/ci/run_server.sh
