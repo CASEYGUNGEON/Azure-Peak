@@ -85,3 +85,8 @@ jobs:
           else
             echo "Compilation succeeded without critical errors."
           fi
+
+      - name: Run unit tests
+        id: unit-tests
+        run: |
+          bash tools/ci/run_server.sh
