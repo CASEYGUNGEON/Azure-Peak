@@ -12,11 +12,8 @@ mkdir ci_test/data
 #test config
 cp tools/ci/ci_config.txt ci_test/config/config.txt
 
-#set the map
-cp _maps/$MAP.json ci_test/data/next_map.json
-
 cd ci_test
-DreamDaemon tgstation.dmb -close -trusted -verbose -params "log-directory=ci"
+DreamDaemon roguetown.dmb -close -trusted -verbose -params "log-directory=ci"
 
 cd ..
 
