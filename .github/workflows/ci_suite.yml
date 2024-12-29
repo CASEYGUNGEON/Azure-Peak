@@ -92,7 +92,7 @@ jobs:
     steps:
       - name: Run tests
         run: |
-          bash echo $(basename $(pwd))
+          pwd
           bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
           tools/build/build --ci dm -DCIBUILDING
