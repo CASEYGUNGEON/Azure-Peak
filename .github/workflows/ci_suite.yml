@@ -85,9 +85,12 @@ jobs:
           else
             echo "Compilation succeeded without critical errors."
           fi
-
+  run-tests:
+    steps:
       - name: Run unit tests
         id: unit-tests
         run: |
+          bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
+          tools/build/build --ci dm -DCIBUILDING
           bash tools/ci/run_server.sh
