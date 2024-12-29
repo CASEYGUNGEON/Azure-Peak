@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-MAP=$1
-
-echo Testing $MAP
+echo Testing
 
 tools/deploy.sh ci_test
 mkdir ci_test/config
