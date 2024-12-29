@@ -92,8 +92,6 @@ jobs:
     steps:
       - name: Run tests
         run: |
-          pwd
-          bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
           tools/build/build --ci dm -DCIBUILDING
           bash tools/ci/run_server.sh
