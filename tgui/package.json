@@ -2,8 +2,8 @@
   "name": "tgui",
   "private": true,
   "scripts": {
-    "build": "gulp --min",
-    "watch": "gulp watch"
+    "tgui:build": "gulp --min",
+    "tgui:watch": "gulp watch"
   },
   "dependencies": {
     "autoprefixer": "6.7.7",
